@@ -1,0 +1,332 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* navbar */
+.n1{
+    top: 0;
+    position:fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+
+
+/* section 1 */
+.s1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    overflow: hidden; /* Hides any overflow of the image outside the section */
+    margin: 0; /* Resets any default margins */
+    padding: 0; /* Resets any default padding */
+}
+
+
+
+.container1 {
+    background-color: transparent;
+    background-image: radial-gradient(#000000 1px, #e5e5f7 1px);
+    background-size: 30px 30px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container2 {
+    width: 100%;
+    height: 100%;
+    --color: #E1E1E1;
+    background-color: #F3F3F3;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+  }
+
+
+
+.p1{
+    position: absolute;
+}
+
+
+
+/* section1 responsive */
+
+
+
+@media (min-width: 300px) {
+
+    .font1{
+        font-size: 40px;
+        
+    }
+    .font2{
+        font-size: 25px;
+    }
+    .bac{
+        background-color: #ffffff;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 8px;
+            width: 90%;
+    }
+    .bac2{
+        background-color: #ffffff;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 8px;
+            width: 70%;
+    }
+    .bac3{
+        background-color: #ffffff;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 8px;
+            width: 60%;
+    }
+    
+}
+@media (min-width: 768px) {
+    .font1{
+        font-size: 90px;
+    }
+    .font2{
+        font-size: 50px;
+    }
+    .bac{
+        background-color: #ffffff;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-radius: 8px;
+            width: 100%;
+    }
+    .bac2{
+        background-color: #ffffff;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 8px;
+            width: 45%;
+    }
+    .bac3{
+        background-color: #ffffff;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 8px;
+            width: 25%;
+            
+    }
+}
+
+
+/* hading */
+
+
+
+.button {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: Bold;
+    width: 30%;
+
+  }
+
+
+
+
+  .responsive-width {
+    width: 50%;
+
+
+}
+@media (min-width: 300px) {
+    .responsive-width {
+        width: 50%;
+        margin-top: 30px;
+        padding-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+@media (min-width: 768px) {
+    .responsive-width {
+        width: 30%;
+        margin-top: 40px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+
+
+  /* skills  */
+  .timeline {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #C5CAE9;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000000;
+    top: 0;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.timeline-item .timeline-date {
+    width: 30%;
+    padding: 10px 20px;
+    background-color: #3F51B5;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+}
+
+.timeline-item .timeline-content {
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) .timeline-date {
+    order: 1;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    order: 2;
+}
+
+.timeline-item:nth-child(even) .timeline-date {
+    order: 2;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    order: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 40px;
+    }
+
+    .timeline-item::before {
+        left: 0;
+        top: 10px;
+    }
+
+    .timeline-item .timeline-date, .timeline-item .timeline-content {
+        width: 100%;
+        margin-left: 0;
+        order: initial;
+    }
+
+    .timeline-item .timeline-date {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+/* skills */
+
+.sfont{
+    font-size: 120px;
+}
+
+.card1:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+/* project section */
+
+.cards {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .cards:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .card-img-top {
+    object-fit: cover;
+    height: 100%;
+    transition: transform 0.3s ease;
+  }
+  .card-body {
+    position: relative;
+    padding: 0;
+  }
+  .card-title {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .cards:hover .overlay {
+    opacity: 1;
+  }
