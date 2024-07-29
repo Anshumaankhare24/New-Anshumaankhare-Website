@@ -1,174 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
-/* navbar */
-.n1{
-    top: 0;
-    position:fixed;
-    z-index: 100;
-    width: 100%;
+body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+/* fonts */
+
+
+
+.oswald-font {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
 
 
-/* section 1 */
-.s1 {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center; /* Centers the image horizontally */
-    align-items: center; /* Centers the image vertically */
-    overflow: hidden; /* Hides any overflow of the image outside the section */
-    margin: 0; /* Resets any default margins */
-    padding: 0; /* Resets any default padding */
-}
 
-
-
-.container1 {
-    background-color: transparent;
-    background-image: radial-gradient(#000000 1px, #e5e5f7 1px);
-    background-size: 30px 30px;
-    width: 100%;
-    height: 100%;
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
   }
   
-  .container2 {
-    width: 100%;
-    height: 100%;
-    --color: #E1E1E1;
-    background-color: #F3F3F3;
-    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
-        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
-    background-size: 55px 55px;
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
   }
 
+  
 
 
-.p1{
-    position: absolute;
+
+
+
+
+
+/* navbar */
+.n1 {
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background: url('./assits/image/b1.png') no-repeat center center;
+
 }
 
 
 
-/* section1 responsive */
+/* background layout */
 
 
 
-@media (min-width: 300px) {
 
-    .font1{
-        font-size: 40px;
-        
-    }
-    .font2{
-        font-size: 25px;
-    }
-    .bac{
-        background-color: #ffffff;
-            padding-left: 10px;
-            padding-right: 10px;
-            border-radius: 8px;
-            width: 90%;
-    }
-    .bac2{
-        background-color: #ffffff;
-            padding-left: 10px;
-            padding-right: 10px;
-            border-radius: 8px;
-            width: 70%;
-    }
-    .bac3{
-        background-color: #ffffff;
-            padding-left: 10px;
-            padding-right: 10px;
-            border-radius: 8px;
-            width: 60%;
-    }
-    
-}
-@media (min-width: 768px) {
-    .font1{
-        font-size: 90px;
-    }
-    .font2{
-        font-size: 50px;
-    }
-    .bac{
-        background-color: #ffffff;
-            padding-left: 30px;
-            padding-right: 30px;
-            border-radius: 8px;
-            width: 100%;
-    }
-    .bac2{
-        background-color: #ffffff;
-            padding-left: 10px;
-            padding-right: 10px;
-            border-radius: 8px;
-            width: 45%;
-    }
-    .bac3{
-        background-color: #ffffff;
-            padding-left: 10px;
-            padding-right: 10px;
-            border-radius: 8px;
-            width: 25%;
-            
-    }
-}
+
 
 
 /* hading */
 
 
 
-.button {
-    padding: 12.5px 30px;
-    border: 0;
-    border-radius: 100px;
-    background-color: #ffffff;
-    color: #000000;
-    font-weight: Bold;
-    width: 30%;
+#home {
+    height: 100vh;
+    background: url('./assits/image/b1.png') no-repeat center center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+h1.display-4 {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+p.lead {
+    font-size: 1.60rem;
+}
+
+.btn-primary {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+
+    p.lead {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+.button1 {
+    /* Variables */
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+  }
+  
+  .button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+  }
+  
+  .button1:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+  }
+  
+  .button1:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
   }
 
 
 
 
-  .responsive-width {
-    width: 50%;
 
 
+
+
+
+#about {
+    height: 100vh;
+    background: url('./assits/image/b3.png') no-repeat center center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-@media (min-width: 300px) {
-    .responsive-width {
-        width: 50%;
-        margin-top: 30px;
-        padding-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
+#about h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
 
+#about p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+
+    p.lead {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #about p {
+        font-size: 1rem;
     }
 }
-@media (min-width: 768px) {
-    .responsive-width {
-        width: 30%;
-        margin-top: 40px;
-        margin-left: 0;
-        margin-right: 0;
+
+#Education {
+        
+        background: url('./assits/image/b2.png') no-repeat center center;
+        background-size: cover;
+        color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: #000000;
+        border-style: none;
+        border-width: 10px;
     }
+
+
+
+/* skills  */
+#Skill {
+        
+    background: url('./assits/image/b2.png') no-repeat center center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 
-
-  /* skills  */
-  .timeline {
+.timeline {
     width: 90%;
     max-width: 1200px;
     margin: 50px auto;
@@ -221,7 +377,7 @@
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
@@ -258,7 +414,8 @@
         top: 10px;
     }
 
-    .timeline-item .timeline-date, .timeline-item .timeline-content {
+    .timeline-item .timeline-date,
+    .timeline-item .timeline-content {
         width: 100%;
         margin-left: 0;
         order: initial;
@@ -276,7 +433,7 @@
 
 /* skills */
 
-.sfont{
+.sfont {
     font-size: 120px;
 }
 
@@ -287,32 +444,51 @@
 
 /* project section */
 
+
+#Project {
+        /* height: 100vh; */
+    background: url('./assits/image/b4.png') no-repeat center center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: #000000;
+    border-style: none;
+    border-width: 10px;
+}
+
 .cards {
     border: none;
     border-radius: 15px;
     overflow: hidden;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  .cards:hover {
+}
+
+.cards:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  .card-img-top {
+}
+
+.card-img-top {
     object-fit: cover;
     height: 100%;
     transition: transform 0.3s ease;
-  }
-  .card-body {
+}
+
+.card-body {
     position: relative;
     padding: 0;
-  }
-  .card-title {
+}
+
+.card-title {
     margin: 0;
     font-size: 1.2rem;
     font-weight: bold;
-  }
-  .overlay {
+}
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -326,7 +502,96 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-  }
-  .cards:hover .overlay {
+}
+
+.cards:hover .overlay {
     opacity: 1;
-  }
+}
+
+
+
+/* cectefection */
+
+#Certifications {
+    /* height: 100vh; */
+background: url('./assits/image/b4.png') no-repeat center center;
+background-size: cover;
+color: rgb(0, 0, 0);
+display: flex;
+align-items: center;
+justify-content: center;
+border-bottom: #000000;
+border-style: none;
+border-width: 10px;
+}
+
+.certifications-section {
+    background-image: url('/mnt/data/bg1.png'); /* Path to your uploaded image */
+    background-size: cover;      /* Stretches the image to cover the entire area */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;  /* Centers the image */
+    padding: 50px 0;             /* Adds padding for spacing */
+    color: #fff;                 /* Optional: Sets the text color to white */
+}
+
+
+
+
+
+
+/* footer */
+#footer{
+    background: url('./assits/image/b1.png') no-repeat center center;
+background-size: cover;
+color: rgb(0, 0, 0);
+display: flex;
+align-items: center;
+justify-content: center;
+border-bottom: #000000;
+border-style: none;
+border-width: 10px;
+}
+
+
+
+/* curser follower */
+
+.cursor {
+    z-index: 999;
+    position: fixed;
+    background: #2696E8;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #2696E8,
+                0 0 60px #2696E8,
+                0 0 100px #2696E8;
+    animation: colors 5s infinite;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+@keyframes colors {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.cursor:before {
+    content: '';
+    position: absolute;
+    background: #2696E8;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+}
+
+
+/* contect form */
+
