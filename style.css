@@ -17,7 +17,7 @@ body {
 .oswald-font {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -295,6 +295,58 @@ p.lead {
         font-size: 1rem;
     }
 }
+
+
+/* time line */
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: #e9ecef;
+}
+.timeline-item > div {
+    position: relative;
+    width: 50%;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+.timeline-item:nth-child(odd) > div {
+    left: 0;
+}
+.timeline-item:nth-child(even) > div {
+    left: 50%;
+}
+.card {
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+@media (max-width: 767px) {
+    .timeline-item > div {
+        width: 100%;
+        left: 0 !important;
+    }
+    .timeline-item::before {
+        left: 10px;
+    }
+}
+
+
+
+
+
+
 
 #Education {
         
